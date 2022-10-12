@@ -13,7 +13,7 @@ server.app.use(body_parser_1.default.json());
 server.app.use(body_parser_1.default.urlencoded({ extended: true }));
 server.app.use('/', default_routes_1.default);
 server.app.use('/sneaker', sneaker_routes_1.default);
-mongoose_1.default.connect('mongodb://localhost:27017/sneakersDb', (error) => {
+mongoose_1.default.connect('mongodb+srv://usr_sneakers:sneakers2022@cluster0.ehz8x8y.mongodb.net/sneakersDb', (error) => {
     if (error) {
         throw error;
     }
